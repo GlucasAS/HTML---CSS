@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        mark{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<h1>Principais formatações</h1>
+<h2>Negrito/destaque</h2>
+<p><b>Negrito</b> com a tag B (NÃO SEMANTICA)</p>
+<p><strong>Negrito</strong> com o termo semantico Strong (forte/destque) (NÃO SEMANTICA)</p>
+<!--Usar sempre o termo semantico, nesse caso, para negrito, usar Strong-->
+<h2>Termo em itálico</h2>
+<p><i>Itálico</i> com a tag i (NÃO SEMANTICA)</p>
+<p><em>Itálico</em> com a tag em</p>
+<!--SEMPRE PRIORIZAR USAR O TERMO SEMANTICO, SENDO ASSIM, USAR <EM> DE ENFASE-->
+
+<h1>Formatações adicionais</h1>
+<h2>Texo marcado</h2>
+<p>Toma <mark style="background-color: crimson;">marcação</mark></p> <!-- Se eu tirar o style, ele vai ficar azul igual ao outro pq eu defini essa cor usando style na head-->
+
+<p>Toma <mark>marcação de outra</mark> dnv</p>
+<!--Pra formatar de uma forma que todos os marks fiquem com a mesma cor, precisa-se colocar o style na head e marcando a tag mark com a cor definida-->
+
+<h2>Texto grande e pequeno</h2>
+<p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small></p>
+<!--Big está obsoleta por não segnificar de fato algo semantico/com sentido. Small ja tem o significado semanntico, como as letras miudas em um contrato-->
+<h2>texto deletado</h2>
+<p>Podemos marcar um <del>texto como excluido</del>, para indicar que ele deve ser lido, mas não considerado</p>
+<h2>texto inserido</h2>
+<p>Podemos marcar um <ins>texto como inserido,</ins> para dar um enfase e indicar que ele foi adicionado depois</p>
+<p>Existe tambem o <u>sublinhado</u> com a tag u (não semantica)</p>
+<h2>Texto sobrescrito</h2>
+<p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+<h2>Texto subscrito</h2>
+<p>Para escrever coisas do tipo H<sub>2</sub>O</p>
+
+</body>
+</html>

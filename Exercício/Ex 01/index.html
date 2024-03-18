@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <title>FALA TROPA</title>
+</head>
+<body>
+    <h1>Olá, Mundo</h1>
+    <p>Esse é o meu primeiro documento HTML! <br>Estou muito feliz!</p>
+    <p> Independente da forma que escrever, se estiver dentro da teg &lt;p&gt; e &lt;/p&gt;, ele sempre entrará no site como um parágrafo continuo. Para quebrar o texto, é preciso usar a tag &lt;br&gt; <!-- lt: Less than/Menor que / gt: Greater than/Maior que--> </p>
+<h1>Colocando simbolos e emojis:</h1>
+&reg;
+&copy;
+&trade;
+&euro;
+&pound;
+&yen;
+&cent;
+&delta;
+&uparrow;
+<p>Adicionando emojis. Usaremos o site emojipedia:<br>&#x1F925 &#x1F61C &#x1F351
+</p>
+<h1> Colocando imagem:</h1>
+<picture>
+    <source media="(max-width: 700px)" srcset="imagens/dormindo300.jpg" type="image/jpg">
+    <source media="(max-width: 1050px)" srcset="imagens/dormindo650.jpg" type="image/jpg">
+    <img src="Imagens/dormindo1000.jpg" alt="Dormindo no metro">
+</picture>
+
+<img src="Imagens/transparente700.png" alt="Um estranho">
+<p>Tambem podemos carregar imagens externas</p>
+<img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/javascript-2752148-2284965.png" alt="malucao"><!--Copiar o link de uma imagem e colar-->
+<h1>Colocando favicon</h1>
+<p>Após converter a imagem png em icon, ou separar um icon pra adicionar, e só salva-lo na mesma pasta e na parte de "head", acima do title, digita linkfavicon </p>
+
+<h1>Imagens dinâmicas</h1>
+<p>Criando imagens que se ajustam de acordo com o tamanho da tela</p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/realpequena.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+    <img src="Imagens/pequena.png" alt="Dinamica">
+</picture>
+
+<h1>Reproduzindo audios</h1>
+<p>Reproduzindo audios em html5</p>
+<audio src="Audio/Two Hearts - TrackTribe.mp3" preload="metadata" controls autoplay loop></audio>
+<!--MP3 - WAV - OGG-->
+ <P> Outra maneira</P>
+ <audio preload="metadata" controls autoplay loop>
+    <source src="Audio/Two Hearts - TrackTribe.mp3" type="audio/mpeg">
+    <source src="Audio/Two Hearts - TrackTribe.ogg" type="audio/ogg">
+    <source src="Audio/Two Hearts - TrackTribe.wave" type="audio/wave">
+    <p>Seu navegador não suporta áudio <a href="Audio/Two Hearts - TrackTribe.mp3" download="Two Hearts - TrackTribe.mp3">Clique aqui para baixar o arquivo</a></p>
+ </audio>
+
+ <h1>Colocando vídeo</h1>
+ <p>Aqui estou colocando video usando html5 hospedados localmente</p>
+ <!--Formatos aceitos mp4/m4v - ogg/ogv - webm -->
+<video src="Videos/Videozin1.mp4" width="500" controls muted autoplay></video>
+
+<p>De outra forma</p>
+<video Controls muted autoplay width="500px" poster="Imagens/dormindo650.jpg">
+    <source src="Videos/Videozin1.mp4" type="video/mp4">\
+    <source src="Videos/Videozin.webm" type="video/webm">
+    <p>Se o seu navegador não for compatível, <a href="Videos/Videozin1.mp4" download="Videozin1.mp4">Clique aqui para baixar</a></p>
+</video>
+<P>Colocando vídeo em hospedagem externa</P>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=t5yIg0W-_mOXVS4i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<!--Dá pra fazer tambem pelo vimeo-->
+
+<h1>Videos legais para assistir</h1>
+<p><video src="Videos/Videozin1.mp4" width="500" controls muted autoplay poster="Imagens/dormindo300.jpg"></video> <video src="Videos/Videozin.webm" width="500" controls muted autoplay poster="Imagens/dormindo300.jpg"></video></p>
+<p><video src="Videos/Videozin1.mp4" width="500" controls muted autoplay poster="Imagens/dormindo300.jpg"></video> <a href="pag002.html">
+    <video src="Videos/Videozin.webm" width="500" controls muted poster="Imagens/dormindo300.jpg"></video>
+</a></p>
+
+
+</html>

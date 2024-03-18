@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            border-width: 5px;
+            border-color: red;
+            border-style: dashed;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            
+        }
+        a:hover{
+            color: blue;
+        }
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            /*shorthand border: width/style/color*/
+
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            /*shorthand padding: top/right/bottom/left. Indo no sentido horário. Se todos os lados for o mesmo valor, basta colocar então o valor uma vez. Se os lados opostos forem iguais, é so colocar o valor de dois dos quatro lados*/
+
+            margin-top: 20px;
+            margin-right: auto;
+            margin-bottom: 40px;
+            margin-left: auto;
+            /*shorthand margin: top/right/bottom/left. Indo no sentido horário. Se todos os lados for o mesmo valor, basta colocar então o valor uma vez*/
+            /*Auto = centralização automática. Segue o tamanho da tela*/
+
+            outline-width: 5px;
+            outline-style: dotted;
+            outline-color: salmon;
+            /*Tracejado dentro da margin*/
+            /*Shorthand: width/Style/Color*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Box-Level</h1>
+    <p> Parágrafos também são exemplos de caixas Box-Level, mas os <a href="#">links são inline-level.</a>Vamos ver como tudo isso funciona na prática</p>
+    
+</body>
+</html>
